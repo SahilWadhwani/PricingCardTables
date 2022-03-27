@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 1</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    body {
+        background: url('int.bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1110px 1000px;
+
+    }
+
+    .top {
+        display: inline-block;
+        margin: 36px 610px;
+        padding: 32px;
+        height: 36px;
+        width: 160px;
+
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        color: #6e6565;
+    }
+
+    .top h3 {
+        margin: -13px;
+
+    }
+
+    .top input {
+        position: absolute;
+        top: 32px;
+        left: 15px;
+
+
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        appearance: none;
+        background: #6e6565;
+        outline: none;
+        border-radius: 23px;
+
+    }
+
+    input:checked[type="checkbox"] {
+        background: rgb(114 104 201 / 88%);
+    }
+
+    input[type="checkbox"]:before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    input:checked::before {
+        left: 40px;
+    }
+
+    .an {
+        position: absolute;
+
+        top: 108px;
+        left: 539px;
+        font-size: larger;
+    }
+
+    .mo {
+        position: absolute;
+
+        top: 108px;
+        left: 750px;
+        font-size: larger;
+
+    }
+
+    .middle {
+        position: absolute;
+        display: inline;
+        width: 753px;
+        height: 333px;
+        margin: 33px;
+        left: 285px;
+
+    }
+
+    .box {
+        position: relative;
+        display: inline-block;
+        border: 2px solid rgb(236, 233, 233);
+        width: 221px;
+        height: 275px;
+        margin: 2px;
+        padding: 6px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #6e6565;
+        border-radius: 10px;
+
+    }
+
+    #box1 {
+        margin: 21px 12px;
+        padding: 12px 2px;
+        height: 301px;
+        width: 218px;
+        background-color: white;
+
+    }
+
+    #box1 span {
+        display: block;
+        padding: 3px;
+        height: 28px;
+
+    }
+
+    #box1 span h2 {
+        margin: -4px;
+        font-size: 35px;
+    }
+
+    #box1 hr {
+        margin: 10px;
+    }
+
+    .box button {
+        margin: 8px;
+        padding: 7px;
+        width: 200px;
+        background-color: rgb(114 104 201 / 88%);
+        
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    #box2 {
+        margin: 11px 8px;
+        padding: 12px 2px;
+        height: 358px;
+        width: 221px;
+        top: -21px;
+        background-color: rgb(114 104 201 / 88%);
+        
+        color: white;
+
+    }
+
+
+    #box2 span {
+        display: block;
+        padding: 4px;
+        height: 27px;
+    }
+
+    #box2 span h2 {
+        margin: -2px;
+        font-size: 35px;
+    }
+
+
+
+    #box2 hr {
+        margin: 10px;
+    }
+
+    #box2 button {
+        margin: 18px 8px;
+        padding: 7px 7px;
+        width: 200px;
+
+        background-color: white;
+        color: rgb(17, 17, 17);
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    #box3 span {
+        display: block;
+        padding: 3px;
+        height: 27px;
+    }
+
+    #box3 span h2 {
+        margin: -4px;
+        font-size: 35px;
+    }
+
+    #box3 {
+        margin: 21px 12px;
+        padding: 12px 2px;
+        height: 301px;
+        width: 218px;
+        background-color: white;;
+
+    }
+
+    #box3 hr {
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="top">
+        <h3>Our Pricing</h3>
+
+        <span class="an">Annually</span>
+
+        <input type="checkbox">
+
+        <span class="mo">Monthly</span>
+
+    </div>
+
+
+    <div class="middle">
+
+        <div class="box" id="box1">
+            <span>Basic</span>
+            <span>
+                <h2>$19.99</h2>
+            </span>
+            <hr>
+            <span>500 GB Storage</span>
+            <hr>
+            <span>2 Users Allowed</span>
+            <hr>
+            <span>Send up to 3 GB</span>
+            <hr>
+
+            <button>LEARN MORE</button>
+
+        </div>
+
+        <div class="box" id="box2">
+            <span>Professional</span>
+            <span>
+                <h2>$24.99</h2>
+            </span>
+            <hr>
+            <span>1 TB Storage</span>
+            <hr>
+            <span>5 Users Allowed</span>
+            <hr>
+            <span>Send up to 10 GB</span>
+            <hr>
+            <span><button>LEARN MORE</button></span>
+
+        </div>
+
+        <div class="box" id="box3">
+            <span>Master</span>
+            <span>
+                <h2>$39.99</h2>
+            </span>
+            <hr>
+            <span>2 TB Storage</span>
+            <hr>
+            <span>10 Users Allowed</span>
+            <hr>
+            <span>Send up to 20 GB</span>
+            <hr>
+            <button>LEARN MORE</button>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
